@@ -1,7 +1,11 @@
+import TopHeader from "./widgets/TopHeader";
+
 export default function Home() {
   return (
     <div>
-      <h1>Olá Mundo!</h1>
+      <header className="bg-amber-300">
+        <TopHeader />
+      </header>
     </div>
   );
 }
