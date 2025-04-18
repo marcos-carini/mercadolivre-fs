@@ -2,6 +2,9 @@ services:
   mercado-livre-front:
     image: mercado-livre-front:0.0.5
     container_name: mercado-livre-front
+    volumes:
+      - ../front-end:/app
+      - /app/node_modules
     ports:
       - "3040:3000"
     networks:
