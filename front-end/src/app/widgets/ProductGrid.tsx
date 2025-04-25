@@ -11,7 +11,6 @@ export default function ProductGrid() {
   const getProducts = async () => {
     const res = await fetch("http://localhost:3050/")
     const data = await res.json()
-    console.log(data);
     setDataRes(data);
   }
 
