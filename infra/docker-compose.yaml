@@ -19,6 +19,9 @@ services:
       - /app/node_modules
     ports:
       - "3050:3001"
+    command: sh -c "npm i && npx prisma generate && npm run start:dev"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@mercado-livre-db:5432/mercado_livre?schema=public
     networks:
       - mercado-livre-network
 
